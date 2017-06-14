@@ -1,0 +1,34 @@
+\chapter{Variables aleatorias}
+\section{Definición de variable aleatoria}
+\paragraph{}
+Una variable aleatoria es una aplicación $X:E\rightarrow\mathbb{R}$ que a cada elemento del espacio muestral le hace corresponder un número real.
+
+\paragraph{}
+La definición solo tiene sentido si:
+\begin{itemize}
+\item Para cada $\omega \in E$ se verifica que $X(\omega)\in\mathbb{R}$.
+\item Si $B=(-\infty,x]\in\mathbb{R}, X^{-1}(B)\in\beta$.
+\end{itemize}
+
+También una variable aleatoria es una cantidad variable cuyos valores dependen del azar y para la cual existe una distribución de probabilidad.
+
+
+\section{Función de distribución de una v.a.}
+Sea $(E,\beta,P)$ un espacio probabilístico asociado a un experimento aleatorio y sea $X:E\rightarrow\mathbb{R}$ una variable aleatoria. Se llama función de distribución de $X$ a la aplicación $F:\mathbb{R}\rightarrow\mathbb{R}$ que a cada $x\in\mathbb{R}$ le hace corresponder:
+\[F(x)=P(X \leq x)=P(X\in(-\infty,x])\]
+
+\subsection{Propiedades}
+\begin{itemize}
+\item[1.]$\lim_{x \to -\infty} F(x)=0$; $\lim_{x \to \infty} F(x)=1$.
+\item[2.]$F$ es monótona no decreciente.
+\item[3.]$F$ es continua por la derecha.
+\end{itemize}
+
+\subsection{Teorema de la f. distribución}
+Una función $F:\mathbb{R} \to \mathbb{R}$ es la función de distribución de una v.a. X si y solo si verifica las tres propiedades. En base a lo anterior, también es válido:
+\[F(a-) = P(X<a), \forall a \in \mathbb{R}\]
+Además, se verifica lo siguiente:
+\begin{itemize}
+\item $\forall a,b \in \mathbb{R}, P(a < X \leq b)=F(b)-F(a)$.
+\item $\forall a \in \mathbb{R}, P(X=a)=F(a)-F(a-)$.
+\end{itemize}
