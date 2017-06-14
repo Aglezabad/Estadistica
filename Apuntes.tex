@@ -1,0 +1,65 @@
+\documentclass[12pt,a4paper,oneside,onecolumn,titlepage]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Ángel González}
+\title{Apuntes de Estadística 2017}
+\begin{document}
+\chapter{Probabilidad}
+\section{Definiciones preliminares}
+\paragraph{Experimento aleatorio:}
+Es aquel que, bajo las mismas condiciones iniciales, puede presentar varios resultados diferentes sin que pueda predecirse en cada caso el resultado que se obtendrá.
+\subparagraph{}
+Para que un experimento sea aleatorio debe verificar:
+\begin{itemize}
+\item Que pueda ser repetido, en las mismas condiciones, un número ilimitado de veces.
+\item Se conozca de antemano los posibles resultados del experimento.
+\item En cada repetición no es posible conocer el resultado que se obtendrá.
+\end{itemize}
+\paragraph{Espacio muestral asociado a un experimento aleatorio:}
+Es el conjunto formado por todos los posibles resultados del experimento aleatorio. Lo designamos con la letra $E$.
+\paragraph{Suceso:} Se denomina así a cada uno de los subconjuntos del espacio muestral.
+\subparagraph{}
+Existen dos tipos de sucesos según su composición:
+\begin{itemize}
+\item \textbf{Suceso elemental:} Cada uno de los resultados del experimento.
+\item \textbf{Suceso compuesto:} El formado por la unión de sucesos elementales.
+\end{itemize}
+\paragraph{Suceso seguro:}
+Es aquel que se verifica siempre. Designado por $E$.
+\paragraph{Suceso imposible:}
+Es aquel que no se verifica nunca. Lo designamos por $\Phi$.
+\paragraph{Espacio de sucesos:}
+Es el conjunto formado por todos los sucesos compuestos, incluido el suceso imposible. Se designa por $\beta$.
+
+
+\section{Operaciones con sucesos}
+Sean $A,B \in \beta$:
+\paragraph{Suceso unión:} Es el suceso que resulta cuando ocurre $A$, ocurre $B$ o ambos a la vez. Lo designamos por $A \cup B$.
+\paragraph{Suceso intersección:} Es el suceso que resulta cuando ocurren $A$ y $B$ a la vez. Lo designamos con $A \cap B$.
+\paragraph{Inclusión de sucesos:} Diremos que $A \subset B$ si siempre que ocurre $A$ ocurre $B$. Si $A \subset B$, entonces $A \cap B = A$ y $A \cup B = B$.
+\paragraph{Igualdad de sucesos:}Diremos que $A = B$ si $A \subset B$ y $B \subset A$.
+\paragraph{Sucesos incompatibles:} Dos sucesos son incompatibles cuando al verificarse uno, no puede hacerlo el otro, su intersección es $\Phi$.
+\paragraph{Suceso contrario:} El suceso contrario de $A$ es el que se verifica cuando no lo hace $A$. Se verifica que $A \cap \overline{A} = \Phi$ y $A \cup \overline{A} = E$.
+\paragraph{Suceso diferencia:} Se designa por $B - A$. Es el formado por todos los sucesos elementales que pertenecen a $B$ pero no a $A$. Se verifica que $B - A = B \cap \overline{A}$. Además $\overline{A} = E - A$.
+
+
+\section{Leyes de Morgan}
+Sean $A, B \in \beta$:
+\begin{itemize}
+\item $\overline{A \cup B} = \overline{A} \cap \overline{B}$
+\item $\overline{A \cap B} = \overline{A} \cup \overline{B}$
+\end{itemize}
+
+
+\section{Álgebra de sucesos}
+Todas las operaciones anteriores se pueden realizar porque $\beta$ tiene estructura de álgebra (es un álgebra de Boole) cuando $E$ es finito o de $\sigma$-álgebra cuando $E$ es infinito.
+
+
+\section{Definición axiomática de probabilidad}
+Diremos que una aplicación $P: \beta \rightarrow \mathbb{R}$ es una probabilidad si verifica:
+
+
+\end{document}
