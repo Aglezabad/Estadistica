@@ -30,7 +30,7 @@ Existen dos tipos de sucesos según su composición:
 \paragraph{Suceso seguro:}
 Es aquel que se verifica siempre. Designado por $E$.
 \paragraph{Suceso imposible:}
-Es aquel que no se verifica nunca. Lo designamos por $\Phi$.
+Es aquel que no se verifica nunca. Lo designamos por $\phi$.
 \paragraph{Espacio de sucesos:}
 Es el conjunto formado por todos los sucesos compuestos, incluido el suceso imposible. Se designa por $\beta$.
 
@@ -41,8 +41,8 @@ Sean $A,B \in \beta$:
 \paragraph{Suceso intersección:} Es el suceso que resulta cuando ocurren $A$ y $B$ a la vez. Lo designamos con $A \cap B$.
 \paragraph{Inclusión de sucesos:} Diremos que $A \subset B$ si siempre que ocurre $A$ ocurre $B$. Si $A \subset B$, entonces $A \cap B = A$ y $A \cup B = B$.
 \paragraph{Igualdad de sucesos:}Diremos que $A = B$ si $A \subset B$ y $B \subset A$.
-\paragraph{Sucesos incompatibles:} Dos sucesos son incompatibles cuando al verificarse uno, no puede hacerlo el otro, su intersección es $\Phi$.
-\paragraph{Suceso contrario:} El suceso contrario de $A$ es el que se verifica cuando no lo hace $A$. Se verifica que $A \cap \overline{A} = \Phi$ y $A \cup \overline{A} = E$.
+\paragraph{Sucesos incompatibles:} Dos sucesos son incompatibles cuando al verificarse uno, no puede hacerlo el otro, su intersección es $\phi$.
+\paragraph{Suceso contrario:} El suceso contrario de $A$ es el que se verifica cuando no lo hace $A$. Se verifica que $A \cap \overline{A} = \phi$ y $A \cup \overline{A} = E$.
 \paragraph{Suceso diferencia:} Se designa por $B - A$. Es el formado por todos los sucesos elementales que pertenecen a $B$ pero no a $A$. Se verifica que $B - A = B \cap \overline{A}$. Además $\overline{A} = E - A$.
 
 
@@ -60,6 +60,28 @@ Todas las operaciones anteriores se pueden realizar porque $\beta$ tiene estruct
 
 \section{Definición axiomática de probabilidad}
 Diremos que una aplicación $P: \beta \rightarrow \mathbb{R}$ es una probabilidad si verifica:
+\begin{itemize}
+\item[1.]Si $A \in \beta, P(A) \geq 0$.
+\item[2.]$P(E) = 1$.
+\item[3.]Si $A_{1},A_{2},...,A_{n} \in \beta$ son sucesos incompatibles dos a dos, entonces $P(A_{1} \cup A_{2} \cup ... \cup A_{n}) = P(A_{1}) + P(A_{2}) + ... + P(A_{n})$.
+\end{itemize}
+La terna $(E,\beta,P)$ se denomina \textbf{espacio probabilístico}.
+
+\subsection{Consecuencias de los axiomas}
+\begin{itemize}
+\item[1.]Si $A \in \beta, P(\overline{A}) = 1 - P(A)$.
+\item[2.]$P(\phi)=0$.
+\item[3.]Si $A,B \in \beta$ son tales que $B \subset A$, entonces:
+\begin{itemize}
+\item[1.]$P(B) \leq P(A)$.
+\item[2.]$P(A-B)=P(A)-P(B)$.
+\end{itemize}
+\item[4.]Si $A \in \beta, P(A)\leq1$.
+\item[5.]Si $A, B \in \beta$ son compatibles, es decir, existe $A \cap B \neq \phi$, entonces $P(A \cup B)=P(A)+P(B)-P(A \cap B)$.
+\item[6.]Regla de Laplace: Sean $A_{1},...,A_{n}$ sucesos elementales, es decir, incompatibles dos a dos y tales que $A_{1} \cup ... \cup A_{n} = E$. Supongamos además que $P(A_{1})=...=P(A_{n})$. Entonces para todo $A \in \beta$:
+\[P(A)= \frac{Casos\:favorables\:al\:suceso\:A}{Casos\:posibles}\]
+\end{itemize}
+
 
 
 \end{document}
