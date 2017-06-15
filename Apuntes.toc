@@ -1,6 +1,6 @@
 \select@language {spanish}
-\contentsline {chapter}{\numberline {1}Probabilidad}{2}
-\contentsline {section}{\numberline {1.1}Definiciones preliminares}{2}
+\contentsline {chapter}{\numberline {1}Probabilidad.}{2}
+\contentsline {section}{\numberline {1.1}Definiciones preliminares.}{2}
 \contentsline {paragraph}{Experimento aleatorio:}{2}
 \contentsline {subparagraph}{}{2}
 \contentsline {paragraph}{Espacio muestral asociado a un experimento aleatorio:}{2}
@@ -9,7 +9,7 @@
 \contentsline {paragraph}{Suceso seguro:}{2}
 \contentsline {paragraph}{Suceso imposible:}{3}
 \contentsline {paragraph}{Espacio de sucesos:}{3}
-\contentsline {section}{\numberline {1.2}Operaciones con sucesos}{3}
+\contentsline {section}{\numberline {1.2}Operaciones con sucesos.}{3}
 \contentsline {paragraph}{Suceso uni\IeC {\'o}n:}{3}
 \contentsline {paragraph}{Suceso intersecci\IeC {\'o}n:}{3}
 \contentsline {paragraph}{Inclusi\IeC {\'o}n de sucesos:}{3}
@@ -17,21 +17,32 @@
 \contentsline {paragraph}{Sucesos incompatibles:}{3}
 \contentsline {paragraph}{Suceso contrario:}{3}
 \contentsline {paragraph}{Suceso diferencia:}{3}
-\contentsline {section}{\numberline {1.3}Leyes de Morgan}{3}
-\contentsline {section}{\numberline {1.4}\IeC {\'A}lgebra de sucesos}{4}
-\contentsline {section}{\numberline {1.5}Definici\IeC {\'o}n axiom\IeC {\'a}tica de probabilidad}{4}
-\contentsline {subsection}{\numberline {1.5.1}Consecuencias de los axiomas}{4}
-\contentsline {section}{\numberline {1.6}Probabilidad condicionada}{5}
-\contentsline {section}{\numberline {1.7}Independencia de sucesos}{5}
-\contentsline {subsection}{\numberline {1.7.1}Intersecci\IeC {\'o}n de sucesos independientes}{5}
-\contentsline {subsection}{\numberline {1.7.2}Independencia de sucesos contrarios}{5}
-\contentsline {section}{\numberline {1.8}Probabilidad compuesta}{6}
-\contentsline {subsection}{\numberline {1.8.1}Teorema de la probabilidad total}{6}
-\contentsline {subsection}{\numberline {1.8.2}Teorema de Bayes}{6}
-\contentsline {chapter}{\numberline {2}Variables aleatorias}{7}
-\contentsline {section}{\numberline {2.1}Definici\IeC {\'o}n de variable aleatoria}{7}
+\contentsline {section}{\numberline {1.3}Leyes de Morgan.}{3}
+\contentsline {section}{\numberline {1.4}\IeC {\'A}lgebra de sucesos.}{4}
+\contentsline {section}{\numberline {1.5}Definici\IeC {\'o}n axiom\IeC {\'a}tica de probabilidad.}{4}
+\contentsline {subsection}{\numberline {1.5.1}Consecuencias de los axiomas.}{4}
+\contentsline {section}{\numberline {1.6}Probabilidad condicionada.}{5}
+\contentsline {section}{\numberline {1.7}Independencia de sucesos.}{5}
+\contentsline {subsection}{\numberline {1.7.1}Intersecci\IeC {\'o}n de sucesos independientes.}{5}
+\contentsline {subsection}{\numberline {1.7.2}Independencia de sucesos contrarios.}{5}
+\contentsline {section}{\numberline {1.8}Probabilidad compuesta.}{6}
+\contentsline {subsection}{\numberline {1.8.1}Teorema de la probabilidad total.}{6}
+\contentsline {subsection}{\numberline {1.8.2}Teorema de Bayes.}{6}
+\contentsline {chapter}{\numberline {2}Variables aleatorias.}{7}
+\contentsline {section}{\numberline {2.1}Definici\IeC {\'o}n de variable aleatoria.}{7}
 \contentsline {paragraph}{}{7}
 \contentsline {paragraph}{}{7}
 \contentsline {section}{\numberline {2.2}Funci\IeC {\'o}n de distribuci\IeC {\'o}n de una v.a.}{7}
-\contentsline {subsection}{\numberline {2.2.1}Propiedades}{7}
-\contentsline {subsection}{\numberline {2.2.2}Teorema de la f. distribuci\IeC {\'o}n}{8}
+\contentsline {subsection}{\numberline {2.2.1}Propiedades.}{7}
+\contentsline {subsection}{\numberline {2.2.2}Teorema de la f. distribuci\IeC {\'o}n.}{8}
+\contentsline {section}{\numberline {2.3}Variables aleatorias discretas. Funci\IeC {\'o}n de masa.}{8}
+\contentsline {subsection}{\numberline {2.3.1}Definici\IeC {\'o}n de v.a. discreta.}{8}
+\contentsline {subsection}{\numberline {2.3.2}Definici\IeC {\'o}n de f. de masa.}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {subsection}{\numberline {2.3.3}Conclusi\IeC {\'o}n.}{8}
+\contentsline {section}{\numberline {2.4}Variables aleatorias continuas. Funci\IeC {\'o}n de densidad.}{9}
+\contentsline {subsection}{\numberline {2.4.1}Definici\IeC {\'o}n de v.a. continua.}{9}
+\contentsline {subsection}{\numberline {2.4.2}Definici\IeC {\'o}n de f. densidad.}{9}
+\contentsline {section}{\numberline {2.5}Esperanza matem\IeC {\'a}tica y varianza de una variable.}{9}
+\contentsline {subsection}{\numberline {2.5.1}Esperanza matem\IeC {\'a}tica.}{9}
+\contentsline {subsubsection}{Propiedades.}{10}

@@ -1,5 +1,5 @@
-\chapter{Probabilidad}
-\section{Definiciones preliminares}
+\chapter{Probabilidad.}
+\section{Definiciones preliminares.}
 \paragraph{Experimento aleatorio:}
 Es aquel que, bajo las mismas condiciones iniciales, puede presentar varios resultados diferentes sin que pueda predecirse en cada caso el resultado que se obtendrá.
 \subparagraph{}
@@ -26,7 +26,7 @@ Es aquel que no se verifica nunca. Lo designamos por $\phi$.
 Es el conjunto formado por todos los sucesos compuestos, incluido el suceso imposible. Se designa por $\beta$.
 
 
-\section{Operaciones con sucesos}
+\section{Operaciones con sucesos.}
 Sean $A,B \in \beta$:
 \paragraph{Suceso unión:} Es el suceso que resulta cuando ocurre $A$, ocurre $B$ o ambos a la vez. Lo designamos por $A \cup B$.
 \paragraph{Suceso intersección:} Es el suceso que resulta cuando ocurren $A$ y $B$ a la vez. Lo designamos con $A \cap B$.
@@ -37,7 +37,7 @@ Sean $A,B \in \beta$:
 \paragraph{Suceso diferencia:} Se designa por $B - A$. Es el formado por todos los sucesos elementales que pertenecen a $B$ pero no a $A$. Se verifica que $B - A = B \cap \overline{A}$. Además $\overline{A} = E - A$.
 
 
-\section{Leyes de Morgan}
+\section{Leyes de Morgan.}
 Sean $A, B \in \beta$:
 \begin{itemize}
 \item $\overline{A \cup B} = \overline{A} \cap \overline{B}$
@@ -45,11 +45,11 @@ Sean $A, B \in \beta$:
 \end{itemize}
 
 
-\section{Álgebra de sucesos}
+\section{Álgebra de sucesos.}
 Todas las operaciones anteriores se pueden realizar porque $\beta$ tiene estructura de álgebra (es un álgebra de Boole) cuando $E$ es finito o de $\sigma$-álgebra cuando $E$ es infinito.
 
 
-\section{Definición axiomática de probabilidad}
+\section{Definición axiomática de probabilidad.}
 Diremos que una aplicación $P: \beta \rightarrow \mathbb{R}$ es una probabilidad si verifica:
 \begin{itemize}
 \item[1.]Si $A \in \beta, P(A) \geq 0$.
@@ -58,7 +58,7 @@ Diremos que una aplicación $P: \beta \rightarrow \mathbb{R}$ es una probabilida
 \end{itemize}
 La terna $(E,\beta,P)$ se denomina \textbf{espacio probabilístico}.
 
-\subsection{Consecuencias de los axiomas}
+\subsection{Consecuencias de los axiomas.}
 \begin{itemize}
 \item[1.]Si $A \in \beta, P(\overline{A}) = 1 - P(A)$.
 \item[2.]$P(\phi)=0$.
@@ -73,7 +73,7 @@ La terna $(E,\beta,P)$ se denomina \textbf{espacio probabilístico}.
 \[P(A)= \frac{Casos\:favorables\:al\:suceso\:A}{Casos\:posibles}\]
 \end{itemize}
 
-\section{Probabilidad condicionada}
+\section{Probabilidad condicionada.}
 Sean $A,B \in \beta$ tales que $P(A)>0$. Se llama probabilidad de $B$ condicionada por $A$ y se escribe $P(B|A)$ a la probabilidad de que ocurra $B$ sabiendo que se ha verificado $A$. Se verifica que:
 \[P(B|A)=\frac{P(B \cap A)}{P(A)}\]
 
@@ -82,17 +82,17 @@ Análogamente, si $P(B)>0$, se define la probabilidad del suceso $A$ condicionad
 
 El espacio de probabilidad condicionada es un espacio probabilístico, luego se verifican todos los axiomas y todas las propiedades asociadas a la probabilidad.
 
-\section{Independencia de sucesos}
+\section{Independencia de sucesos.}
 Sean $A,B \in \beta$.
 \begin{itemize}
 \item Diremos que $A$ es independiente de $B$ si $P(A|B)=P(A)$.
 \item Diremos que $B$ es independiente de $A$ si $P(B|A)=P(B)$.
 \item Si $A$ es independiente de $B$, entonces $B$ es independiente de $A$ y podemos hablar de sucesos independientes.
 \end{itemize}
-\subsection{Intersección de sucesos independientes}
+\subsection{Intersección de sucesos independientes.}
 Sean $A,B \in \beta$. A y B son independientes si y solo si:
-\[P(A \cap B)=P(A)*P(B)\]
-\subsection{Independencia de sucesos contrarios}
+\[P(A \cap B)=P(A)P(B)\]
+\subsection{Independencia de sucesos contrarios.}
 Sean $A,B \in \beta$ sucesos independientes. Entonces:
 \begin{itemize}
 \item $A$ y $\overline{B}$ son independientes.
@@ -100,14 +100,14 @@ Sean $A,B \in \beta$ sucesos independientes. Entonces:
 \item $\overline{A}$ y $\overline{B}$ son independientes.
 \end{itemize}
 
-\section{Probabilidad compuesta}
+\section{Probabilidad compuesta.}
 Tenemos un conjunto de sucesos $A_{1},...,A_{n} \in \beta$ tales que $P(A_{1} \cap ... \cap A_{n})>0$. Entonces:
 \[P(A_{1} \cap ... \cap A_{n}) = P(A_{1})*P(A_{2}|A_{1})*...*P(A_{n}|A_{1} \cap ... \cap A_{n-1})\]
 
-\subsection{Teorema de la probabilidad total}
+\subsection{Teorema de la probabilidad total.}
 Sean $A_{1},...,A_{n} \in \beta$ incompatibles dos a dos y tales que $A_{1} \cup ... \cup A_{n} = E$. Sea $B \in \beta$ un suceso cualquiera y supongamos conocidas $P(A_{i})>0$ y $P(B|A_{i})$. Entonces:
-\[P(B) = \sum_{i=1}^{n} P(B|A_{i})*P(A_{i})\]
+\[P(B) = \sum_{i=1}^{n} P(B|A_{i})P(A_{i})\]
 
-\subsection{Teorema de Bayes}
+\subsection{Teorema de Bayes.}
 Sean $A_{1},...,A_{n} \in \beta$ incompatibles dos a dos y tales que $A_{1} \cup ... \cup A_{n} = E$. Sea $B \in \beta$ un suceso cualquiera y supongamos conocidas $P(A_{i})>0$ y $P(B|A_{i})$. Entonces, fijado $k \in {1,2,...,n}$, se verifica que:
-\[P(A_{k}|B) = \frac{P(B|A_{k})*P(A_{k})}{ \sum_{i=1}^{n} P(B|A_{i})*P(A_{i})}\]
+\[P(A_{k}|B) = \frac{P(B|A_{k})P(A_{k})}{ \sum_{i=1}^{n} P(B|A_{i})P(A_{i})}\]

@@ -1,5 +1,5 @@
-\chapter{Variables aleatorias}
-\section{Definición de variable aleatoria}
+\chapter{Variables aleatorias.}
+\section{Definición de variable aleatoria.}
 \paragraph{}
 Una variable aleatoria es una aplicación $X:E\rightarrow\mathbb{R}$ que a cada elemento del espacio muestral le hace corresponder un número real.
 
@@ -17,18 +17,77 @@ También una variable aleatoria es una cantidad variable cuyos valores dependen 
 Sea $(E,\beta,P)$ un espacio probabilístico asociado a un experimento aleatorio y sea $X:E\rightarrow\mathbb{R}$ una variable aleatoria. Se llama función de distribución de $X$ a la aplicación $F:\mathbb{R}\rightarrow\mathbb{R}$ que a cada $x\in\mathbb{R}$ le hace corresponder:
 \[F(x)=P(X \leq x)=P(X\in(-\infty,x])\]
 
-\subsection{Propiedades}
+\subsection{Propiedades.}
 \begin{itemize}
 \item[1.]$\lim_{x \to -\infty} F(x)=0$; $\lim_{x \to \infty} F(x)=1$.
 \item[2.]$F$ es monótona no decreciente.
 \item[3.]$F$ es continua por la derecha.
 \end{itemize}
 
-\subsection{Teorema de la f. distribución}
+\subsection{Teorema de la f. distribución.}
 Una función $F:\mathbb{R} \to \mathbb{R}$ es la función de distribución de una v.a. X si y solo si verifica las tres propiedades. En base a lo anterior, también es válido:
 \[F(a-) = P(X<a), \forall a \in \mathbb{R}\]
 Además, se verifica lo siguiente:
 \begin{itemize}
 \item $\forall a,b \in \mathbb{R}, P(a < X \leq b)=F(b)-F(a)$.
 \item $\forall a \in \mathbb{R}, P(X=a)=F(a)-F(a-)$.
+\end{itemize}
+
+
+\section{Variables aleatorias discretas. Función de masa.}
+\subsection{Definición de v.a. discreta.}
+Diremos que una variable aleatoria discreta es aquella que toma valores en un conjunto finito o numerable de puntos. Los puntos con probabilidad positiva se denominan \textbf{puntos de masa}.
+
+\subsection{Definición de f. de masa.}
+Sea $X: E \to \mathbb{R}$ una variable aleatoria que toma valores ${x_{1},...,x_{n},...}$ y sean $p_{i} = P(X=x_{i}), \forall i \in I = {1,2,...}$. El conjunto ${x_{i}, p_{i}}_{i \in I}$ tal que $\forall i \in I p_{i} \geq 0$ y $\sum_{i \in I} p_{i} = 1$ se llama \textbf{función de masa}.
+
+\paragraph{}
+Para este caso, la función de distribución de X se calcula como:
+\[Para\: cada\: x \in \mathbb{R}, F(x)=P(X \leq x_{i}) = \sum_{x_{i} \leq x} P(X=x_{i}) = \sum_{x_{i} \leq x} p_{i}\]
+
+La función de masa también caracteriza las v.a. discretas, por lo que usándola se puede calcular la probabilidad de cualquier suceso.
+
+\subsection{Conclusión.}
+En resumen:
+\begin{itemize}
+\item[1.]Tanto las funciónde masa como la función de distribución caracterizan las variables aleatorias discretas.
+\item[2.]Conociendo una de ellas se puede obtener la otra con facilidad.
+\item[3.]Ambas permiten calcular la probabilidad de cualquier suceso asociado a ese experimento aleatorio.
+\end{itemize}
+
+
+\section{Variables aleatorias continuas. Función de densidad.}
+\subsection{Definición de v.a. continua.}
+Diremos que una variable aleatoria $X:E\to\mathbb{R}$ es continua si existe una función $f$ integrable y no negativa tal que la función de distribución $F$ verifica:
+\[F(x)=\int_{-\infty}^{x} f(t)dt,\: \forall x \in \mathbb{R}\]
+
+\subsection{Definición de f. densidad.}
+La función $f$ se llama función de densidad asociada a $x$, catacteriza a la v.a. y verifica las propiedades siguientes:
+\begin{itemize}
+\item[1.]$\int_{-\infty}^{\infty} f(x)dx = 1$.
+\item[2.]$\forall a,b \in \mathbb{R}\: a<b,\: P(a < X \leq b) = \int_{a}^{b} f(x)dx$.
+\item[3.]Si $X$ es una v.a. continua, $\forall a \in \mathbb{R}, P(X=a)=0$.
+\item[4.]Toda función integrable $f$ que verifica que $f(x) \geq 0, \forall  \in \mathbb{R}$ y $\int_{-\infty}^{\infty} f(x)dx=1$ es la función de densidad de una v.a. cuya función de distribución es:
+\[F(x)=\int_{-\infty}^{x} f(t)dt, \:\forall x \in \mathbb{R}\]
+\item[5.]Si $X$ es una v.a. continua con función de distribución $F$, entonces $f(x)=F'(x)$ en los puntos en que F sea derivable y 0 en el resto.
+\end{itemize}
+
+
+\section{Esperanza matemática y varianza de una variable.}
+\subsection{Esperanza matemática.}
+Sea $X:E\to \mathbb{R}$ una variable aleatoria. Se llama \textbf{media, valor esperado} o \textbf{esperanza matemática} de $X$ y se escribe $E[X]$ a:
+\begin{itemize}
+\item Si $X$ es discreta con función de masa $\{x_{i}, P(X=x_{i})\}_{i \in I}$ y la serie converge:
+\[E[X]=\sum_{i \in I} x_{i}P(X=x_{i})\]
+\item Si $X$ es continua con función de densidad $f$ y existe la integral:
+\[E[X]=\int_{-\infty}^{\infty}xf(x)dx\]
+\end{itemize}
+
+\subsubsection{Propiedades.}
+\begin{itemize}
+\item[1.]Si $X:E\to\mathbb{R}$ es una variable aleatoria y $g: \mathbb{R}\to\mathbb{R}$ una aplicación de manera que $Y=g(X)$ es también una variable aleatoria, entonces:
+\begin{itemize}
+\item Si $X$ es discreta con función de masa $\{x_{i},P(X=X_{i})\}_{i\in I}$ y la serie converge:
+\[E[g(X)]=\sum_{i\in I}g(x_{i})P(X=x_{i})\]
+\end{itemize}
 \end{itemize}

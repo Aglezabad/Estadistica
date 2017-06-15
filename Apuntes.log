@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.14)  14 JUN 2017 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.14)  15 JUN 2017 14:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -487,35 +487,63 @@ LaTeX Info: Redefining \% on input line 1.
 Cap\'{\i }tulo 2.
 [7
 
-])
+]
+Overfull \hbox (1.74474pt too wide) in paragraph at lines 37--37
+[]\OT1/cmr/bx/n/17.28 Variables alea-to-rias dis-cre-tas. Fun-ci^^Son de
+ []
+
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+[8]
+Overfull \hbox (14.28973pt too wide) in paragraph at lines 70--71
+[]\OT1/cmr/m/n/12 Toda fun-ci^^Son in-te-gra-ble $\OML/cmm/m/it/12 f$ \OT1/cmr/
+m/n/12 que ve-ri-fi-ca que $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^U \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \O
+MS/cmsy/m/n/12 8 2 \U/msb/m/n/12 R$ \OT1/cmr/m/n/12 y $[][] \OML/cmm/m/it/12 f\
+OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dx \OT1/cmr
+/m/n/12 =
+ []
+
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+[9]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 90.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 90.
+)
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
- [8] (./Apuntes.aux
+ [10]
+(./Apuntes.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 2284 strings out of 494842
- 25728 string characters out of 6178079
+ 2301 strings out of 494842
+ 26020 string characters out of 6178079
  84497 words of memory out of 5000000
- 5595 multiletter control sequences out of 15000+600000
+ 5609 multiletter control sequences out of 15000+600000
  10761 words of font info for 40 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 27i,6n,30p,320b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,6n,30p,339b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/symbols/msbm10.pfb>
-Output written on Apuntes.pdf (8 pages, 113111 bytes).
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb>
+Output written on Apuntes.pdf (10 pages, 129420 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
