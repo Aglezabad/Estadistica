@@ -89,5 +89,23 @@ Sea $X:E\to \mathbb{R}$ una variable aleatoria. Se llama \textbf{media, valor es
 \begin{itemize}
 \item Si $X$ es discreta con función de masa $\{x_{i},P(X=X_{i})\}_{i\in I}$ y la serie converge:
 \[E[g(X)]=\sum_{i\in I}g(x_{i})P(X=x_{i})\]
+\item Si $X$ es continua con función de densidad $f$ y existe la integral:
+\[E[g(X)]=\int_{-\infty}^{\infty}g(X)f(X)dx\]
 \end{itemize}
+\item[2.]Si $g_{1}, g_{2}:\mathbb{R} \to \mathbb{R}$ son tales que existe $E[g_{1}(X)]$ y $E[g_{2}(X)]$, entonces para todos $a,b \in \mathbb{R}$:
+\[E[ag_{1}(X)+bg_{2}(X)]=aE[g_{1}(X)]+bE[g_{2}(X)]\]
+En particular:
+\[E[aX+b]=aE[X]+b\]
+\end{itemize}
+
+\subsection{Varianza.}
+Sea $X:E\to\mathbb{R}$ una variable aleatoria. Se llama \textbf{varianza} de $X$ y se escribe $V(X)$ a $V(X)=E \big[ (X-E[X])^{2} \big]$ si existe esta esperanza.\\
+Para calcular la varianza, distinguimos según el tipo de variable aleatoria:
+\begin{itemize}
+\item Si $X$ es discreta con función de masa,
+\[V(X)=\sum_{i\in I}(x_{i}-E[X])^{2}P(X=x_{i})\]
+siempre que la serie sea convergente.
+\item Si $X$ es continua con función de densidad,
+\[V(X)=\int_{-\infty}^{\infty}(x-E[X])^{2}f(x)dx\]
+si existe la integral.
 \end{itemize}
